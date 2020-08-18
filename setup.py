@@ -5,14 +5,14 @@ with open("README.md", 'r') as readme_file:
     long_description = readme_file.read()
 
 setuptools.setup(
-    name="InequalityMetrics",
+    name="Inequality-Metrics",
     version="1.0.0",
     author="Tom Logan",
-    author_email="micae@example.com",
-    description="Inequality Metrics contains KMG functions for calculating inquality distributions",
+    author_email="findtomseamil@uclive.ac.nz",
+    description="Inequality Metrics contains functions for the Kolm-Pollak, Atkinson EDE and Gini Index aproaches to calculating inequality distributions",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://kcna.kp/",
+    url="https://github.com/michael-j-freeman/urutau-inequality-metrics",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
