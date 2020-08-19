@@ -123,7 +123,7 @@ def atkinson_ede(a, epsilon = -0.5, weight = None):
     """
     Params:
         a: Distribution of data; List
-        TODO: epsilon: Set inequality aversion parameter; Integer
+        epsilon: Set inequality aversion parameter; Integer
         weights: For weighted average; List (Length of a)
 
     Returns: Normal Atkinson EDE
@@ -150,7 +150,7 @@ def atkinson_index(a, epsilon = -0.5, weight = None):
     """
     Params:
         a: Distribution of data; List
-        TODO: epsilon: Set inequality aversion parameter; Integer
+        epsilon: Set inequality aversion parameter; Integer
         weights: For weighted average; List (Length of a)
 
     Returns: Atkinson index

@@ -5,7 +5,7 @@ Inequality Metrics contains functions for the Kolm-Pollak, Atkinson EDE and Gini
 <br/>
 
 ### This library contains the following functions:<br/>
-* `kolm_pollak_ede()` for calculating the Kolm Pollak equally distributed equivilant<
+* `kolm_pollak_ede()` for calculating the Kolm Pollak equally distributed equivilant
 * `kolm_pollak_index()` for calculating the Kolm Pollak inequality index
 * `atkinson_adjusted_ede()` for calcuating the adjusted Atkinson equally distributed equivilant
 * `atkinson_adjusted_index()` for calcuating the adjusted Atkinson inequality index
@@ -16,6 +16,9 @@ Inequality Metrics contains functions for the Kolm-Pollak, Atkinson EDE and Gini
 ### Usage
 
 ##### Installation
-`pip install inequality-metrics`
+`pip install InequalityMetrics`
 ##### Usage
-# TODO
+Import the package
+`import InequalityMetrics`
+Call the required function
+`output = InequalityMetrics.kolm_pollak_ede()`
