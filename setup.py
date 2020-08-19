@@ -8,7 +8,7 @@ setuptools.setup(
     name="Inequality-Metrics",
     version="1.0.0",
     author="Tom Logan",
-    author_email="findtomseamil@uclive.ac.nz",
+    author_email="tom.logan@canterbury.ac.nz",
     description="Inequality Metrics contains functions for the Kolm-Pollak, Atkinson EDE and Gini Index aproaches to calculating inequality distributions",
     long_description=long_description,
     long_description_content_type="text/markdown",
