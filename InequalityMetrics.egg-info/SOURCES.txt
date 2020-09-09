@@ -1,9 +1,0 @@
-README.md
-setup.py
-InequalityMetrics.egg-info/PKG-INFO
-InequalityMetrics.egg-info/SOURCES.txt
-InequalityMetrics.egg-info/dependency_links.txt
-InequalityMetrics.egg-info/requires.txt
-InequalityMetrics.egg-info/top_level.txt
-inequality_metrics/__init__.py
-inequality_metrics/inequality_function.py
