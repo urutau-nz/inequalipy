@@ -12,7 +12,7 @@ setuptools.setup(
     description="Inequality Metrics contains functions for the Kolm-Pollak, Atkinson EDE and Gini Index aproaches to calculating inequality distributions",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/michael-j-freeman/urutau-inequality-metrics",
+    url="https://github.com/urutau-nz/inequality-metrics",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

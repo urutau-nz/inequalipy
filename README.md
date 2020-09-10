@@ -1,5 +1,5 @@
 # Inequality Metrics
-[Github Link](https://github.com/michael-j-freeman/urutau-inequality-metrics)
+[Github Link](https://github.com/urutau-nz/inequality-metrics)
 
 Inequality Metrics contains functions for the Kolm-Pollak, Atkinson EDE and Gini Index aproaches to calculating inequality distributions. These methods allow for better statistical modeling of inequality than other, more standard methods as they include a defined "Inequality Aversion Parameter" which allows for both positive and negative distributions to be easily calculated.
 <br/>
