@@ -104,24 +104,27 @@ def atkinson_index(a, epsilon = -0.5, weights = None):
 
     Returns: Atkinson index
     """
-    ede_sum = 0
-    x_mean = np.average(a, weights = weights)
+    ede_sum = 0 # init sum
     if not weights:
         N = len(a)
     else:
-        N = sum(weights)
+        N = sum(weights) #sum of data
+    x_mean = np.average(a, weights = weights)
     count = 0
+
     for i in a:
         if not weights:
             ede_sum += (i**(1-epsilon))
         else:
             ede_sum += (i**(1-epsilon)) * weights[count]
         count += 1
+
     ede = (ede_sum / N)**(1 / (1 - epsilon))
+
     index = 1 - (ede / x_mean)
     return(index)
 
-def gini_index(a, beta = -0.5, weights = None):
+def gini(a, beta = -0.5, weights = None):
     """
     Params:
         a: Distribution of data; List
@@ -130,31 +133,25 @@ def gini_index(a, beta = -0.5, weights = None):
         
     Returns: Gini index
     """
-    a = list(np.sort(a))
-    a_percent = []
-    weight_perc = []
-    w_perc_sum = 0
-    perc_sum = 0
-    data_tot = sum(a)
-    area_total = simps(np.arange(0,101,1), dx=1)
-    if not weights:
-        N = len(a)
-    else:
-        N = sum(weights)
-    for i in a:
-        perc_sum += i/data_tot*100
-        a_percent.append(perc_sum)
-    if not weights:
-        area_real = simps(a_percent)
-        area_diff = area_total - area_real
-        gini = round((area_diff / area_total), 3)
-    else:
-        weight_tot = sum(weights)
-        for i in weights:
-            w_perc_sum += i/weight_tot*100
-            weight_perc.append(w_perc_sum)
-        area_real = simps(a_percent, weight_perc)
-        area_diff = area_total - area_real
-        gini = round((area_diff / area_total), 3)
-    return(gini)
+    # based on bottom eq:
+    # http://www.statsdirect.com/help/generatedimages/equations/equation154.svg
+    # from:
+    # http://www.statsdirect.com/help/default.htm#nonparametric_methods/gini.htm
+    # All values are treated equally, arrays must be 1d:
+    if weights:
+        array = np.repeat(array,weights)
+    array = array.flatten()
+    if np.amin(array) < 0:
+        # Values cannot be negative:
+        array -= np.amin(array)
+    # Values cannot be 0:
+    array += 0.0000001
+    # Values must be sorted:
+    array = np.sort(array)
+    # Index per array element:
+    index = np.arange(1,array.shape[0]+1)
+    # Number of array elements:
+    n = array.shape[0]
+    # Gini coefficient:
+    return ((np.sum((2 * index - n  - 1) * array)) / (n * np.sum(array)))
 
