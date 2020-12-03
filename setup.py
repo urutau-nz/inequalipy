@@ -14,6 +14,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/urutau-nz/inequality-metrics",
     packages=setuptools.find_packages(),
+    package_dir = {"InequalityMetrics": "inequality_metrics"},
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
