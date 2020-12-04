@@ -6,7 +6,7 @@ with open("README.md", 'r') as readme_file:
 
 setuptools.setup(
     name="inequipy",
-    version="1.0.8",
+    version="1.0.9",
     author="Tom Logan, Mitchell Anderson",
     author_email="tom.logan@canterbury.ac.nz",
     description="Inequality Metrics contains functions for the Kolm-Pollak, Atkinson and Gini Index aproaches to calculating inequality of a distribution",
@@ -20,10 +20,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     install_requires=[
-        'scipy',
         'numpy'
     ],
     python_requires='>=3',
 )
-
-#There are other things which can be modified

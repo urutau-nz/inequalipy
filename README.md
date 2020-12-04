@@ -16,20 +16,28 @@ When using this code, please cite the following two papers:
 * Logan, T. M., Anderson, M. J., Williams, T., & Conrow, L. (Under review). Measuring inequalities in urban systems: An approach for evaluating the distribution of amenities and burdens. _Computers, Environment, and Urban Systems_.
 
 ### This library contains the following functions:
-* `kolm_pollak_ede(a, epsilon, kappa, weights)` for calculating the Kolm-Pollak equally-distributed equivalent
-* `kolm_pollak_index(a, epsilon, kappa, weights)` for calculating the Kolm-Pollak inequality index
-* `atkinson_ede(a, epsilon, weights)` for calculating the Atkinson equally-distributed equivalent
-* `atkinson_index(a, epsilon, weights)` for calculating the Atkinson inequality index
+* `kolmpollak.ede(a, epsilon, kappa, weights)` for calculating the Kolm-Pollak equally-distributed equivalent
+* `kolmpollak.index(a, epsilon, kappa, weights)` for calculating the Kolm-Pollak inequality index
+* `atkinson.ede(a, epsilon, weights)` for calculating the Atkinson equally-distributed equivalent
+* `atkinson.index(a, epsilon, weights)` for calculating the Atkinson inequality index
 * `gini(a, weights)` for calculating the gini index
 
 ### Usage
 ##### Installation
 `pip install inequipy`
 ##### Usage
-Import the package  
-`from inequipy import inequipy as ineq`  
-Call the required function  
-`output = ineq.kolm_pollak_ede(a, epsilon, kappa, weights)`
+Import the package and call the required function:
+```
+import inequipy as ineq  
+ineq.kolmpollak.ede(a, epsilon, weights)
+ineq.gini(a)
+```  
+Alternatively, you may import all of the packages:
+```
+from inequipy import *
+gini(a)
+atkinson.index(a)
+```
 
 ### Examples
 Check out example.ipynb for examples or https://github.com/MitchellAnderson112/access_inequality_index for the function applied in a non-trivial context.
