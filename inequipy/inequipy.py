@@ -85,7 +85,7 @@ def kolm_pollak_index(a, epsilon = None, kappa = None, weights = None):
 def calc_kappa(a, epsilon, weights = None):
     """
     Converts the inequality aversion parameter used in Atkinson's formulae (epsilon)
-    into the form for the Kolm Pollak formulae (kappa).
+    into the form for the Kolm-Pollak formulae (kappa).
     If epsilon > 0 then the quantity is desirable (more is better).
 
     Parameters
