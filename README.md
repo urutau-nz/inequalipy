@@ -1,5 +1,6 @@
 # Inequipy
 [Github Link](https://github.com/urutau-nz/inequipy)
+[Python Pip Link](https://pypi.org/project/inequipy)
 
 Inequipy contains functions for the calculating the inequality of a distribution:
 * Kolm-Pollak Equally-Distributed Equivalent (EDE) and Index
