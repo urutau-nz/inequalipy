@@ -1,8 +1,8 @@
-# Inequipy
-[Github Link](https://github.com/urutau-nz/inequipy)  
-[Python Pip Link](https://pypi.org/project/inequipy)
+# Inequalipy
+[Github Link](https://github.com/urutau-nz/inequalipy)  
+[Python Pip Link](https://pypi.org/project/inequalipy)
 
-Inequipy contains functions for the calculating the inequality of a distribution:
+Inequalipy contains functions for the calculating the inequality of a distribution:
 * Kolm-Pollak Equally-Distributed Equivalent (EDE) and Index
 * Atkinson EDE and Index
 * Gini Index  
@@ -16,25 +16,25 @@ When using this code, please cite the following two papers:
 * Logan, T. M., Anderson, M. J., Williams, T., & Conrow, L. (Under review). Measuring inequalities in urban systems: An approach for evaluating the distribution of amenities and burdens. _Computers, Environment, and Urban Systems_.
 
 ### This library contains the following functions:
-* `kolmpollak.ede(a, epsilon, kappa, weights)` for calculating the Kolm-Pollak equally-distributed equivalent
+* `kolmpollak.ede(a, epsilon, kappa, weights)` for calculating the Kolm-Pollak equally-distributed equivalent (EDE)
 * `kolmpollak.index(a, epsilon, kappa, weights)` for calculating the Kolm-Pollak inequality index
 * `atkinson.ede(a, epsilon, weights)` for calculating the Atkinson equally-distributed equivalent
 * `atkinson.index(a, epsilon, weights)` for calculating the Atkinson inequality index
-* `gini(a, weights)` for calculating the gini index
+* `gini(a, weights)` for calculating the Gini index
 
 ### Usage
 ##### Installation
-`pip install inequipy`
+`pip install inequalipy`
 ##### Usage
 Import the package and call the required function:
 ```
-import inequipy as ineq  
+import inequalipy as ineq  
 ineq.kolmpollak.ede(a, epsilon, weights)
 ineq.gini(a)
 ```  
 Alternatively, you may import all of the packages:
 ```
-from inequipy import *
+from inequalipy import *
 gini(a)
 atkinson.index(a)
 ```
