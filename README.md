@@ -13,7 +13,7 @@ subgroups and thus evaluate the inequity of the distribution.
 
 When using this code, please cite the following two papers:
 * Sheriff, G., & Maguire, K. B. (2020). Health Risk, Inequality Indexes, and Environmental Justice. _Risk Analysis: An Official Publication of the Society for Risk Analysis._ https://doi.org/10.1111/risa.13562
-* Logan, T. M., Anderson, M. J., Williams, T., & Conrow, L. (Under review). Measuring inequalities in urban systems: An approach for evaluating the distribution of amenities and burdens. _Computers, Environment, and Urban Systems_.
+* Logan, T. M., Anderson, M. J., Williams, T., & Conrow, L. (2020). Measuring inequalities in urban systems: An approach for evaluating the distribution of amenities and burdens. _Computers, Environment, and Urban Systems_.
 
 ### This library contains the following functions:
 * `kolmpollak.ede(a, epsilon, kappa, weights)` for calculating the Kolm-Pollak equally-distributed equivalent (EDE)

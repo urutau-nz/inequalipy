@@ -77,7 +77,7 @@ def index(a, epsilon = None, kappa = None, weights = None):
     else:
         x_mean = np.average(a, weights = weights)
 
-    return ede(a - x_mean, epsilon = epsilon, kappa = kappa, weights = weights)
+    return ede(a, epsilon = epsilon, kappa = kappa, weights = weights) - x_mean
 
 
 def calc_kappa(a, epsilon, weights = None):
