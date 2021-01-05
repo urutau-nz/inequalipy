@@ -1,6 +1,6 @@
 # Inequalipy
 [Github Link](https://github.com/urutau-nz/inequalipy)  
-[Python Pip Link](https://pypi.org/project/inequalipy)
+[Python Pip Link](https://pypi.org/project/inequalipy)  
 [GitHub Link for R version](https://github.com/urutau-nz/kolmpollak-R)
 
 Inequalipy contains functions for the calculating the inequality of a distribution:
