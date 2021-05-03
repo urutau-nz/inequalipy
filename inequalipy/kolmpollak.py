@@ -39,7 +39,7 @@ def ede(a, epsilon = None, kappa = None, weights = None):
         N = len(a)
     else:
         ede_sum = np.multiply(np.exp(a*-kappa), weights).sum()
-        N = sum(weights)
+        N = weights.sum()
     return(-1 / kappa) * np.log(ede_sum / N)
 
 
@@ -105,7 +105,7 @@ def calc_kappa(a, epsilon, weights = None):
         Returns the inequality aversion parameter for the Kolm-Pollak formulae
     """
     if weights is None:
-        x_sum = sum(a)
+        x_sum = a.sum()
         x_sq_sum = (np.array(a)**2).sum()
     else:
         x_sum = np.multiply(a, weights).sum()

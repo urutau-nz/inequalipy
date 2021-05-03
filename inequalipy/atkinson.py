@@ -27,7 +27,7 @@ def ede(a, epsilon = 0.5, weights = None):
     if not weights:
         N = len(a)
     else:
-        N = sum(weights)
+        N = weights.sum()
     x_mean = np.average(a, weights = weights)
     count = 0
     for i in a:
