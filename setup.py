@@ -6,7 +6,7 @@ with open("README.md", 'r') as readme_file:
 
 setuptools.setup(
     name="inequalipy",
-    version="1.0.4",
+    version="1.0.5",
     author="Tom Logan, Mitchell Anderson",
     author_email="tom.logan@canterbury.ac.nz",
     description="Inequalipy contains functions for the Kolm-Pollak, Atkinson and Gini Index aproaches to calculating inequality of a distribution",
